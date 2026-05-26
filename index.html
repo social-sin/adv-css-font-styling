@@ -1,124 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Advanced CSS Text Styling</title>
-      <link rel="stylesheet" href="style.css">
-      <script src="script.js" defer></script>
-   </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Advanced Typography Demo</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700;900&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
 <body>
 
- <header>
-    <h1 class="shadow-title">Advanced CSS Text Styling</h1>
+  <header class="hero">
+    <h1>Advanced Typography</h1>
 
-    <p class="intro">
-      Explore alignment, spacing, decoration, transformations,
-      overflow handling, and modern text effects.
+    <p class="hero-text">
+      Explore font families, responsive sizing,
+      font weights, variable styling, and modern
+      CSS typography techniques.
     </p>
   </header>
 
-  <!-- TEXT ALIGNMENT -->
+  <!-- FONT FAMILY -->
   <section class="card">
-    <h2>Text Alignment</h2>
+    <h2>Font Family</h2>
 
-    <p class="left">
-      Left aligned text is the default for most websites.
+    <p class="sans">
+      This paragraph uses a sans-serif font stack.
     </p>
 
-    <p class="center">
-      Center aligned text is common for headings and hero sections.
+    <p class="serif">
+      This paragraph uses a serif font stack.
     </p>
 
-    <p class="justify">
-      Justified text aligns evenly on both sides of the container,
-      creating a print-style appearance often used in magazines,
-      newspapers, and long-form editorial layouts.
+    <p class="mono">
+      This paragraph uses a monospace font stack.
     </p>
   </section>
 
-  <!-- TEXT DECORATION -->
+  <!-- FONT WEIGHT -->
   <section class="card">
-    <h2>Text Decoration</h2>
+    <h2>Font Weight</h2>
 
-    <a href="#" class="underline-link">Underline Link</a>
+    <p class="thin">Thin Weight (100)</p>
 
-    <a href="#" class="dashed-link">Dashed Underline</a>
+    <p class="regular">Regular Weight (400)</p>
 
-    <a href="#" class="wavy-link">Wavy Underline</a>
+    <p class="bold">Bold Weight (700)</p>
 
-    <p class="line-through">
-      This paragraph uses a line-through effect.
+    <p class="black">Black Weight (900)</p>
+  </section>
+
+  <!-- FONT STYLE -->
+  <section class="card">
+    <h2>Font Style</h2>
+
+    <p class="normal-style">
+      This uses normal font styling.
+    </p>
+
+    <p class="italic-style">
+      This uses italic styling.
+    </p>
+
+    <p class="oblique-style">
+      This uses oblique styling.
     </p>
   </section>
 
-  <!-- TEXT TRANSFORM -->
+  <!-- RESPONSIVE TYPOGRAPHY -->
   <section class="card">
-    <h2>Text Transform</h2>
+    <h2>Responsive Typography</h2>
 
-    <p class="uppercase">uppercase text transformation</p>
-
-    <p class="lowercase">LOWERCASE TEXT TRANSFORMATION</p>
-
-    <p class="capitalize">capitalize each word automatically</p>
-  </section>
-
-  <!-- SPACING -->
-  <section class="card">
-    <h2>Spacing & Indentation</h2>
-
-    <p class="spacing-demo">
-      Good typography improves readability. Letter spacing,
-      word spacing, line height, and indentation all help
-      organize text visually and make long paragraphs easier
-      to read across different screen sizes.
-    </p>
-  </section>
-
-  <!-- TEXT OVERFLOW -->
-  <section class="card">
-    <h2>Text Overflow & Wrapping</h2>
-
-    <p class="truncate">
-      This is an example of very long text content that does not fit inside
-      the container width and therefore becomes truncated with an ellipsis.
-    </p>
-  </section>
-
-  <!-- VERTICAL ALIGN -->
-  <section class="card">
-    <h2>Vertical Alignment</h2>
-
-    <p>
-      Text
-      <img
-        src="https://static.vecteezy.com/system/resources/thumbnails/057/068/323/small/single-fresh-red-strawberry-on-table-green-background-food-fruit-sweet-macro-juicy-plant-image-photo.jpg"
-        alt="placeholder"
-        class="middle-align"
-      />
-      aligned with middle vertical alignment.
-    </p>
-
-    <p>
-      Text
-      <img
-        src="https://www.vecteezy.com/free-photos/two-sweet?page=95"
-        alt="placeholder"
-        class="top-align"
-      />
-      aligned to the top.
-    </p>
-  </section>
-
-  <!-- ADVANCED EFFECTS -->
-  <section class="card">
-    <h2>Advanced Text Effects</h2>
-
-    <h3 class="stroke-text">Text Stroke Effect</h3>
-
-    <h3 class="shadow-text">
-      Shadow + Letter Spacing
+    <h3 class="responsive-heading">
+      Resize the browser window
     </h3>
+
+    <p>
+      This heading uses <code>clamp()</code> so the font scales
+      responsively between a minimum and maximum size.
+    </p>
+  </section>
+
+  <!-- LINE HEIGHT + LETTER SPACING -->
+  <section class="card">
+    <h2>Line Height & Letter Spacing</h2>
+
+    <p class="readability">
+      Typography affects readability and visual hierarchy.
+      Combining line-height, letter-spacing, and consistent
+      font sizing helps improve reading comfort across different
+      screen sizes and layouts.
+    </p>
+  </section>
+
+  <!-- SHORTHAND FONT -->
+  <section class="card">
+    <h2>Shorthand Font Property</h2>
+
+    <p class="shorthand">
+      This paragraph uses the shorthand font property.
+    </p>
+  </section>
+
+  <!-- SYSTEM FONTS -->
+  <section class="card">
+    <h2>System Fonts</h2>
+
+    <p class="system-font">
+      System fonts use the operating system’s native UI typeface
+      for better performance and familiarity.
+    </p>
+  </section>
+
+  <!-- ADVANCED FEATURES -->
+  <section class="card">
+    <h2>Advanced Typography Features</h2>
+
+    <p class="small-caps">
+      Small caps typography styling example.
+    </p>
+
+    <p class="ligatures">
+      office efficient affinity official
+    </p>
   </section>
 
 </body>
